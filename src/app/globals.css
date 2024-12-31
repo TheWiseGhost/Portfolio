@@ -169,17 +169,6 @@
   transition: 0.8s;
 }
 
-.my_grid {
-  background: repeating-linear-gradient(
-    to right,
-    #ffffff,
-    #ffffff 200px,
-    #f9e4bd 200px,
-    #f9e4bd 202px
-  );
-  background-position: center;
-}
-
 .wrapper {
   display: flex;
   justify-content: center;
@@ -265,4 +254,29 @@ path.two {
   100% {
     fill: white;
   }
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.float-down {
+  animation: floatDown 3s ease-out;
+}
+
+.my_grid {
+  background: repeating-linear-gradient(
+    to right,
+    #ffffff,
+    #ffffff 200px,
+    #f9e4bd 200px,
+    #f9e4bd 202px
+  );
 }
