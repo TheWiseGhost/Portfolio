@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Navbar = async () => {
+const Navbar = () => {
   return (
     <header className="float-down fixed font-gm right-0 left-0 top-0 px-8 bg-[rgba(255, 255, 255, 0.98)]  backdrop-blur-[5.5px] border border-[rgb(255,255,255, 0.3)] w-1/3 mx-auto z-[100] flex items-center mt-4 py-8 justify-between rounded-full">
       <nav className="absolute left-[50%] top-[55%] transform translate-x-[-50%] translate-y-[-50%] hidden md:block">
