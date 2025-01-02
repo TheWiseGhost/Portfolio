@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
+import Main from "@/components/projects/Main";
 
 export default function Home() {
   const container = useRef();
@@ -53,19 +54,9 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="relative h-screen bg-blue-300"
-    ></motion.div>
+      className="relative min-h-screen bars_bg"
+    >
+      <Main />
+    </motion.div>
   );
 };
-
-// export default function Home() {
-//   return (
-//     <div className="h-[200vh]">
-//       <Navbar />
-//       <div className="h-screen my_grid z-10">
-//         <Hero />
-//       </div>
-//       <div className="h-screen bg-gray-100"></div>
-//     </div>
-//   );
-// }

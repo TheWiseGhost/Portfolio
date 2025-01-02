@@ -126,6 +126,10 @@
   transition: 0.8s;
 }
 
+.text_button .span-mother span:nth-child(8) {
+  transition: 0.9s;
+}
+
 .text_button .span-mother2 {
   display: flex;
   position: absolute;
@@ -167,6 +171,10 @@
 
 .text_button .span-mother2 span:nth-child(7) {
   transition: 0.8s;
+}
+
+.text_button .span-mother2 span:nth-child(8) {
+  transition: 0.9s;
 }
 
 .wrapper {
@@ -323,6 +331,18 @@ path.two {
   animation: rotateGradient 2s linear;
 }
 
+.bars_bg {
+  background-image: repeating-linear-gradient(
+    to right,
+    #adade2,
+    #adade2 2px,
+    transparent 2px,
+    transparent
+  );
+  background-size: 160px 160px;
+  background-color: #fafafa;
+}
+
 .space {
   position: fixed;
   top: 50%;
@@ -389,7 +409,85 @@ path.two {
     48vw 9vh 1px 1px #fff, -43vw 30vh 1px 1px #fff, 29vw -12vh 1px 1px #fff,
     -48vw 13vh 1px 0px #fff, -42vw 32vh 1px 1px #fff, 34vw 15vh 1px 1px #fff,
     29vw -37vh 1px 1px #fff, 28vw 2vh 0px 0px #fff;
-  animation: zoom 1s alternate infinite;
+  animation: zoom 8s alternate infinite;
+}
+
+.cardContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+}
+
+.cardContainer .card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -25%;
+  height: 500px;
+  width: 1000px;
+  border-radius: 25px;
+  padding: 50px;
+  transform-origin: top;
+}
+
+.cardContainer .card h2 {
+  text-align: center;
+  margin: 0px;
+  font-size: 28px;
+}
+
+.cardContainer .card .body {
+  display: flex;
+  height: 100%;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.cardContainer .card .body .description {
+  width: 40%;
+  position: relative;
+  top: 10%;
+}
+
+.cardContainer .card .body .description p {
+  font-size: 16px;
+}
+
+.cardContainer .card .body .description p::first-letter {
+  font-size: 28px;
+  font-family: "Title";
+}
+
+.cardContainer .card .body .description span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardContainer .card .body .description span a {
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardContainer .card .body .imageContainer {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.cardContainer .card .body .imageContainer .inner {
+  width: 100%;
+  height: 100%;
+}
+
+.cardContainer .card .body .imageContainer img {
+  object-fit: cover;
 }
 
 @keyframes zoom {
