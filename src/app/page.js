@@ -52,10 +52,7 @@ const Section2 = ({ scrollYProgress }) => {
   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
 
   return (
-    <motion.div
-      style={{ scale, rotate }}
-      className="relative min-h-screen bars_bg"
-    >
+    <motion.div style={{ scale, rotate }} className="relative h-screen my_grid">
       <Main />
     </motion.div>
   );

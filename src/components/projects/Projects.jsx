@@ -20,25 +20,30 @@ const Projects = () => {
     }
 
     requestAnimationFrame(raf);
-  });
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   const projects = [1, 2, 3, 4];
 
   return (
-    <main ref={container} className="min-h-screen pb-12">
-      {projects.map((project, i) => {
-        const targetScale = 1 - (projects.length - i) * 0.05;
-        return (
-          <Card
-            key={`p_${i}`}
-            i={i}
-            progress={scrollYProgress}
-            range={[i * 0.25, 1]}
-            targetScale={targetScale}
-          />
-        );
-      })}
-    </main>
+    <>
+      <main className="relative pb-80">
+        {projects.map((project, i) => {
+          const targetScale = 1 - (projects.length - i) * 0.05;
+          return (
+            <Card
+              key={`p_${i}`}
+              i={i}
+              progress={scrollYProgress}
+              range={[i * 0.25, 1]}
+              targetScale={targetScale}
+            />
+          );
+        })}
+      </main>
+    </>
   );
 };
 
