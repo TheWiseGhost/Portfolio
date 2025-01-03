@@ -1,10 +1,10 @@
 "use client";
-import Navbar from "@/components/global/Navbar";
-import Hero from "@/components/Hero";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
-import Main from "@/components/projects/Main";
+import MainLanding from "@/components/landing/MainLanding";
+import MainProjects from "@/components/projects/MainProjects";
+import Navbar from "@/components/global/Navbar";
 
 export default function Home() {
   const container = useRef();
@@ -25,35 +25,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main ref={container} className="relative h-[200vh] bg-black">
-      <div className="space h-[200vh] z-0 sticky top-0" />
-      <Navbar />
-      <Section1 scrollYProgress={scrollYProgress} />
-      <Section2 scrollYProgress={scrollYProgress} />
-    </main>
+    <div ref={container}>
+      <MainLanding />
+      <MainProjects />
+    </div>
   );
 }
-
-const Section1 = ({ scrollYProgress }) => {
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
-  return (
-    <motion.div
-      style={{ scale, rotate }}
-      className="sticky top-0 h-screen my_grid pb-[10vh]"
-    >
-      <Hero />
-    </motion.div>
-  );
-};
-
-const Section2 = ({ scrollYProgress }) => {
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
-
-  return (
-    <motion.div style={{ scale, rotate }} className="relative h-screen my_grid">
-      <Main />
-    </motion.div>
-  );
-};

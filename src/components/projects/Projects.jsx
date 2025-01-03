@@ -3,6 +3,7 @@ import Card from "./Card";
 import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
+import NoteSlide from "./my_projects/NoteSlide";
 
 const Projects = () => {
   const container = useRef(null);
@@ -25,11 +26,11 @@ const Projects = () => {
     };
   }, []);
 
-  const projects = [1, 2, 3, 4];
+  const projects = [<NoteSlide />, <NoteSlide />, <NoteSlide />, <NoteSlide />];
 
   return (
     <>
-      <main className="relative pb-80">
+      <main className="relative py-10">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (
@@ -39,7 +40,9 @@ const Projects = () => {
               progress={scrollYProgress}
               range={[i * 0.25, 1]}
               targetScale={targetScale}
-            />
+            >
+              {project}
+            </Card>
           );
         })}
       </main>

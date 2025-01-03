@@ -4,8 +4,9 @@ import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import TextAnim from "./TextAnim";
 import Projects from "./Projects";
+import ImgParallax from "./ImgParallax";
 
-const Main = () => {
+const MainProjects = () => {
   const container = useRef(null);
 
   useEffect(() => {
@@ -20,11 +21,10 @@ const Main = () => {
   });
 
   return (
-    <main ref={container} className="">
-      <TextAnim />
+    <main ref={container} className="relative my_grid">
       <Projects />
     </main>
   );
 };
 
-export default Main;
+export default MainProjects;

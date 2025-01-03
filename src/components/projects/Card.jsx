@@ -12,9 +12,9 @@ const Card = ({ i, progress, range, targetScale, children }) => {
       <motion.div
         style={{
           scale,
-          top: `calc(-5vh + ${i * 25}px)`,
+          top: `calc(${i * 25}px)`,
         }}
-        className="card bg-gray-200"
+        className="card"
       >
         {children}
       </motion.div>
