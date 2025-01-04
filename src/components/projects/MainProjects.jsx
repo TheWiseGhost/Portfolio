@@ -21,7 +21,7 @@ const MainProjects = () => {
   });
 
   return (
-    <main ref={container} className="relative my_grid">
+    <main ref={container} className="relative my_grid min-h-screen">
       <Projects />
     </main>
   );

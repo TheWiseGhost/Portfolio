@@ -1,21 +1,20 @@
 import CircleButton from "@/components/global/CircleButton";
 import React from "react";
 
-const NoteSlide = () => {
+const DropFast = () => {
   return (
-    <div className="w-full bg-white border-4 border-gray-400 h-full">
-      <div className="triangle -left-0.5 -top-0.5"></div>
+    <div className="w-full bg-white border-4 rounded-3xl border-dashed border-[#AF82E8] h-full">
       {/* Big Title */}
       <div>
         <h1 className="text-7xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
-          NoteSlide
+          DropFast
         </h1>
       </div>
       <div className="flex justify-center">
         <CircleButton
           text={"VISIT THIS PROJECT"}
-          color={"#808080"}
-          url={"https://note-slide.com"}
+          color={"#874DD0"}
+          url={"https://trydropfast.com"}
         />
       </div>
 
@@ -35,4 +34,4 @@ const NoteSlide = () => {
   );
 };
 
-export default NoteSlide;
+export default DropFast;

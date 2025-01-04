@@ -1,21 +1,20 @@
 import CircleButton from "@/components/global/CircleButton";
 import React from "react";
 
-const NoteSlide = () => {
+const RiceML = () => {
   return (
-    <div className="w-full bg-white border-4 border-gray-400 h-full">
-      <div className="triangle -left-0.5 -top-0.5"></div>
+    <div className="w-full bg-white border-2 rounded-3xl border-[#000000] h-full">
       {/* Big Title */}
       <div>
         <h1 className="text-7xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
-          NoteSlide
+          Rice_ML
         </h1>
       </div>
       <div className="flex justify-center">
         <CircleButton
           text={"VISIT THIS PROJECT"}
           color={"#808080"}
-          url={"https://note-slide.com"}
+          url={"https://github.com/TheWiseGhost/Rice_ML"}
         />
       </div>
 
@@ -35,4 +34,4 @@ const NoteSlide = () => {
   );
 };
 
-export default NoteSlide;
+export default RiceML;

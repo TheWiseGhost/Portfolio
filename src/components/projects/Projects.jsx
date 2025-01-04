@@ -4,6 +4,10 @@ import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import NoteSlide from "./my_projects/NoteSlide";
+import DropFast from "./my_projects/DropFast";
+import MathFire from "./my_projects/MathFire";
+import SaleSight from "./my_projects/SaleSight";
+import RiceML from "./my_projects/RiceML";
 
 const Projects = () => {
   const container = useRef(null);
@@ -26,11 +30,17 @@ const Projects = () => {
     };
   }, []);
 
-  const projects = [<NoteSlide />, <NoteSlide />, <NoteSlide />, <NoteSlide />];
+  const projects = [
+    <NoteSlide />,
+    <DropFast />,
+    <MathFire />,
+    <SaleSight />,
+    <RiceML />,
+  ];
 
   return (
     <>
-      <main className="relative py-10">
+      <main className="relative pt-10 pb-20">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (
