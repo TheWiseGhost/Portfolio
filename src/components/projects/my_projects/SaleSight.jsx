@@ -3,19 +3,22 @@ import React from "react";
 
 const SaleSight = () => {
   return (
-    <div className="w-full bg-white border-2 rounded-2xl border-solid border-[#34CA00] h-full">
+    <div className="w-full bg-white border-4 rounded-3xl border-solid border-gray-300 h-full">
       {/* Big Title */}
-      <div>
-        <h1 className="text-7xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
-          SaleSight
-        </h1>
-      </div>
-      <div className="flex justify-center">
-        <CircleButton
-          text={"VISIT THIS PROJECT"}
-          color={"#8BFF63"}
-          url={"https://salesight.netlify.app/landing"}
-        />
+      <div className="flex flex-row justify-between ">
+        <img src="SaleSightLogo.png" className="h-20 mt-2 m-1" />
+        <div>
+          <h1 className="text-8xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
+            SaleSight
+          </h1>
+        </div>
+        <div className="flex justify-center">
+          <CircleButton
+            text={"VISIT THIS PROJECT"}
+            color={"#8BFF63"}
+            url={"https://salesight.netlify.app/landing"}
+          />
+        </div>
       </div>
 
       {/* Paragraph */}

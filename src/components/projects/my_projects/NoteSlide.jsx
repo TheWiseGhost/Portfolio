@@ -3,20 +3,20 @@ import React from "react";
 
 const NoteSlide = () => {
   return (
-    <div className="w-full bg-white border-4 border-gray-400 h-full">
-      <div className="triangle -left-0.5 -top-0.5"></div>
+    <div className="w-full bg-white h-full border-4 rounded-3xl border-gray-300">
       {/* Big Title */}
-      <div>
-        <h1 className="text-7xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
+      <div className="flex flex-row justify-between ">
+        <img src="NoteSlideLogo.png" className="w-20 h-20 m-1" />
+        <h1 className="text-8xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
           NoteSlide
         </h1>
-      </div>
-      <div className="flex justify-center">
-        <CircleButton
-          text={"VISIT THIS PROJECT"}
-          color={"#808080"}
-          url={"https://note-slide.com"}
-        />
+        <div className="flex justify-center">
+          <CircleButton
+            text={"VISIT THIS PROJECT"}
+            color={"#FFDB59"}
+            url={"https://note-slide.com"}
+          />
+        </div>
       </div>
 
       {/* Paragraph */}

@@ -3,19 +3,22 @@ import React from "react";
 
 const MathFire = () => {
   return (
-    <div className="w-full bg-white border-2 rounded-2xl border-solid border-[#EB0E0E] h-full">
+    <div className="w-full bg-white border-4 rounded-3xl border-solid border-gray-300 h-full">
       {/* Big Title */}
-      <div>
-        <h1 className="text-7xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
-          MathFire
-        </h1>
-      </div>
-      <div className="flex justify-center">
-        <CircleButton
-          text={"VISIT THIS PROJECT"}
-          color={"#F4622D"}
-          url={"https://mathfire.netlify.app"}
-        />
+      <div className="flex flex-row justify-between ">
+        <img src="MathFireLogo.png" className="w-24 h-20 m-1" />
+        <div>
+          <h1 className="text-8xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
+            MathFire
+          </h1>
+        </div>
+        <div className="flex justify-center">
+          <CircleButton
+            text={"VISIT THIS PROJECT"}
+            color={"#F4622D"}
+            url={"https://mathfire.netlify.app"}
+          />
+        </div>
       </div>
 
       {/* Paragraph */}

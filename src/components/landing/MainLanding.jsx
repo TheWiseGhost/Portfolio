@@ -56,7 +56,10 @@ const Section2 = ({ scrollYProgress }) => {
   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
 
   return (
-    <motion.div style={{ scale, rotate }} className="relative h-screen my_grid">
+    <motion.div
+      style={{ scale, rotate }}
+      className="relative h-screen rainbow_grid"
+    >
       <TextParallax />
     </motion.div>
   );

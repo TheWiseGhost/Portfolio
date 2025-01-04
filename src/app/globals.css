@@ -281,8 +281,18 @@ path.two {
   left: -2;
   width: 0;
   height: 0;
-  border-left: 80px solid #ffed4e;
+  border-left: 80px solid #c9c9c9;
   border-bottom: 80px solid transparent;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.44);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .circle_button {
@@ -384,30 +394,47 @@ path.two {
     #ffdc9b 202px
   );
   z-index: -1; /* Place the gradient behind the Hero component */
-  animation: rotateGradient 10s linear infinite;
+  animation: rotateGradient 2s linear;
 }
 
-.my_grid {
-  position: relative; /* Ensure Hero component is not affected by background */
-  z-index: 10; /* Ensure Hero appears above the background */
-}
-
-.my_grid::before {
-  content: ""; /* Required to make pseudo-element work */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.projects_grid {
   background: repeating-linear-gradient(
-    45deg,
+    -45deg,
     #ffffff,
     #ffffff 200px,
-    #ffdc9b 200px,
-    #ffdc9b 202px
+    #b5b5b5 200px,
+    #b5b5b5 202px
   );
-  z-index: -1; /* Place the gradient behind the Hero component */
-  animation: rotateGradient 2s linear;
+}
+
+.rainbow_grid {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ff8b8b,
+    /* Red */ #ff8b8b 2px,
+    #ffffff 2px,
+    /* White */ #ffffff 202px,
+    #ffc993 202px,
+    /* Orange */ #ffc993 204px,
+    #ffffff 204px,
+    /* White */ #ffffff 404px,
+    #ffff92 404px,
+    /* Yellow */ #ffff92 406px,
+    #ffffff 406px,
+    /* White */ #ffffff 606px,
+    #96ff96 606px,
+    /* Green */ #96ff96 608px,
+    #ffffff 608px,
+    /* White */ #ffffff 808px,
+    #9393fd 808px,
+    /* Blue */ #9393fd 810px,
+    #ffffff 810px,
+    /* White */ #ffffff 1010px,
+    #d7a0fe 1010px,
+    /* Indigo */ #d7a0fe 1012px,
+    #ffffff 1012px,
+    /* White */ #ffffff 1212px
+  );
 }
 
 .bars_bg {

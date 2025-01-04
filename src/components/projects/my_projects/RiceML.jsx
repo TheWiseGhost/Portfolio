@@ -3,19 +3,22 @@ import React from "react";
 
 const RiceML = () => {
   return (
-    <div className="w-full bg-white border-2 rounded-3xl border-[#000000] h-full">
+    <div className="w-full bg-white border-4 rounded-3xl border-gray-300 h-full">
       {/* Big Title */}
-      <div>
-        <h1 className="text-7xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
-          Rice_ML
-        </h1>
-      </div>
-      <div className="flex justify-center">
-        <CircleButton
-          text={"VISIT THIS PROJECT"}
-          color={"#808080"}
-          url={"https://github.com/TheWiseGhost/Rice_ML"}
-        />
+      <div className="flex flex-row justify-between ">
+        <img src="MLLogo.png" className="h-20 m-2" />
+        <div>
+          <h1 className="text-8xl font-gs uppercase font-semibold tracking-widest text-center mb-4 pr-10">
+            Rice_ML
+          </h1>
+        </div>
+        <div className="flex justify-center">
+          <CircleButton
+            text={"VISIT THIS PROJECT"}
+            color={"#808080"}
+            url={"https://github.com/TheWiseGhost/Rice_ML"}
+          />
+        </div>
       </div>
 
       {/* Paragraph */}
