@@ -42,7 +42,7 @@ const Projects = () => {
     <>
       <main className="relative pt-10 pb-20">
         {projects.map((project, i) => {
-          const targetScale = 1 - (projects.length - i) * 0.05;
+          const targetScale = 1 - (projects.length - i) * 0;
           return (
             <Card
               key={`p_${i}`}
