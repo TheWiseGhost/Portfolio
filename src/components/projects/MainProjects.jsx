@@ -18,7 +18,7 @@ const MainProjects = () => {
   });
 
   return (
-    <main ref={container} className="relative rainbow_grid min-h-screen">
+    <main ref={container} className="relative min-h-screen">
       <Projects />
     </main>
   );

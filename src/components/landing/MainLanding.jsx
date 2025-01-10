@@ -58,7 +58,7 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="relative h-screen rainbow_grid"
+      className="relative h-screen bg-white"
     >
       <TextParallax />
     </motion.div>
