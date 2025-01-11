@@ -6,9 +6,12 @@ import { motion } from "framer-motion";
 export const StickyScroll = () => {
   const content = [
     {
-      title: "Create Multiple Drops",
-      description:
-        "Testing products one by one is old fashioned. Take charge and test every product on list faster than your competition by creating numerous simple stores.",
+      title: "Captain + Champion",
+      description: (
+        <p className="font-gm text-base text-neutral-800">
+          Regional Geometry Individual 1st Place
+        </p>
+      ),
       content: (
         <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
           <p className="uppercase font-gm text-4xl text-black text-center">
@@ -18,7 +21,7 @@ export const StickyScroll = () => {
       ),
     },
     {
-      title: "Build Quickly",
+      title: "Member + Champion",
       description:
         "Don't worry about payment processing or every little optimization. Just build a simple stores and test your product to see what works and what doesn't",
       content: (
@@ -30,13 +33,37 @@ export const StickyScroll = () => {
       ),
     },
     {
-      title: "Figure out the Winners",
+      title: "Exec + Champion",
       description:
         "Understand data about your users and the product. Then you can confidently decide when to go in on a product without worrying if you are just wasting time because you've already validated it",
       content: (
         <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
           <p className="uppercase font-gm text-4xl text-black text-center">
             Skills USA
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Committee Chair",
+      description:
+        "Understand data about your users and the product. Then you can confidently decide when to go in on a product without worrying if you are just wasting time because you've already validated it",
+      content: (
+        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
+          <p className="uppercase font-gm text-4xl text-black text-center">
+            Student Council
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Exec Board",
+      description:
+        "Understand data about your users and the product. Then you can confidently decide when to go in on a product without worrying if you are just wasting time because you've already validated it",
+      content: (
+        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
+          <p className="uppercase font-gm text-4xl text-black text-center">
+            Math Honors Society
           </p>
         </div>
       ),
@@ -56,7 +83,7 @@ export const StickyScroll = () => {
     const closestBreakpointIndex = cardsBreakpoints.reduce(
       (acc, breakpoint, index) => {
         const distance = Math.abs(latest - breakpoint);
-        if (distance < (Math.abs(latest - cardsBreakpoints[acc]) * 11) / 6) {
+        if (distance < (Math.abs(latest - cardsBreakpoints[acc]) * 14) / 6) {
           return index;
         }
         return acc;
@@ -68,7 +95,7 @@ export const StickyScroll = () => {
 
   return (
     <motion.div
-      className="flex max-h-[1100px] justify-center relative space-x-10 rounded-md pt-2"
+      className="flex justify-center relative space-x-10 rounded-md pt-2"
       ref={ref}
     >
       <div className="relative flex items-start px-4">
@@ -86,7 +113,7 @@ export const StickyScroll = () => {
               >
                 {item.title}
               </motion.h2>
-              <motion.p
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
@@ -96,7 +123,7 @@ export const StickyScroll = () => {
                 className="text-neutral-900 max-w-sm mt-6"
               >
                 {item.description}
-              </motion.p>
+              </motion.div>
             </div>
           ))}
           <div className="h-40" />
