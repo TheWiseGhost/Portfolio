@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "../global/Navbar";
 import Hero from "./Hero";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -28,9 +27,9 @@ const MainLanding = () => {
     <div>
       <main
         ref={container}
-        className="relative h-[200vh] bg-black overflow-hidden"
+        className="relative h-[200vh] bg-white overflow-hidden"
       >
-        <div className="space z-0 sticky top-0" />
+        <div className="z-0 sticky top-0" />
         <Section1 scrollYProgress={scrollYProgress} />
         <Section2 scrollYProgress={scrollYProgress} />
       </main>

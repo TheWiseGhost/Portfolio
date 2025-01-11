@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import MainLanding from "@/components/landing/MainLanding";
 import MainProjects from "@/components/projects/MainProjects";
-import Navbar from "@/components/global/Navbar";
+import MainClubs from "@/components/clubs/MainClubs";
 
 export default function Home() {
   const container = useRef();
@@ -28,6 +28,7 @@ export default function Home() {
     <div ref={container}>
       <MainLanding />
       <MainProjects />
+      <MainClubs />
     </div>
   );
 }
