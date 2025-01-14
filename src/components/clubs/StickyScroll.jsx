@@ -8,9 +8,23 @@ export const StickyScroll = () => {
     {
       title: "Captain + Champion",
       description: (
-        <p className="font-gm text-base text-neutral-800">
-          Regional Geometry Individual 1st Place
-        </p>
+        <ul className="list-disc space-y-2">
+          <li className="font-gm text-base text-neutral-800">
+            Regional Geometry Individual 1st Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            Regional Frosh/Soph Dou 1st Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            Regional Algebra1 Individual 3rd Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            State Geometry Team 9th Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            State Algebra1 Team 8th Place
+          </li>
+        </ul>
       ),
       content: (
         <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
@@ -22,8 +36,27 @@ export const StickyScroll = () => {
     },
     {
       title: "Member + Champion",
-      description:
-        "Don't worry about payment processing or every little optimization. Just build a simple stores and test your product to see what works and what doesn't",
+      description: (
+        <ul className="list-disc space-y-2">
+          <li className="font-gm text-base text-neutral-800">
+            Regional Invitational Tourney 1st Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            Regional Invitational Tourney 2nd Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            Regional Invitational Tourney 2nd Place
+          </li>
+          <li className="font-gm underline hover:text-black text-base text-neutral-800">
+            <a
+              href="https://postings.speechwire.com/r-comp.php?compid=622920&seasonid=17"
+              target="_blank"
+            >
+              List of all awards
+            </a>
+          </li>
+        </ul>
+      ),
       content: (
         <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
           <p className="uppercase font-gm text-4xl text-black text-center">
@@ -34,8 +67,19 @@ export const StickyScroll = () => {
     },
     {
       title: "Exec + Champion",
-      description:
-        "Understand data about your users and the product. Then you can confidently decide when to go in on a product without worrying if you are just wasting time because you've already validated it",
+      description: (
+        <ul className="list-disc space-y-2">
+          <li className="font-gm text-base text-neutral-800">
+            State Web Design 1st Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            State Cybersecurity 3rd Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            State Extemperaneous Speaking 3rd Place
+          </li>
+        </ul>
+      ),
       content: (
         <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
           <p className="uppercase font-gm text-4xl text-black text-center">
@@ -46,8 +90,19 @@ export const StickyScroll = () => {
     },
     {
       title: "Committee Chair",
-      description:
-        "Understand data about your users and the product. Then you can confidently decide when to go in on a product without worrying if you are just wasting time because you've already validated it",
+      description: (
+        <ul className="list-disc space-y-2">
+          <li className="font-gm text-base text-neutral-800">
+            Co-Founder of First Winter Wishes Bingo
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            40+ Hours of Service + Volunteering
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            Organizer of main donation drives
+          </li>
+        </ul>
+      ),
       content: (
         <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
           <p className="uppercase font-gm text-4xl text-black text-center">
@@ -58,8 +113,19 @@ export const StickyScroll = () => {
     },
     {
       title: "Exec Board",
-      description:
-        "Understand data about your users and the product. Then you can confidently decide when to go in on a product without worrying if you are just wasting time because you've already validated it",
+      description: (
+        <ul className="list-disc space-y-2">
+          <li className="font-gm text-base text-neutral-800">
+            Manager of Logistics and Admission
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            30+ Hours of Service and Volunteering
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            Inducted Memeber of Mu Alpha Theta
+          </li>
+        </ul>
+      ),
       content: (
         <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
           <p className="uppercase font-gm text-4xl text-black text-center">
