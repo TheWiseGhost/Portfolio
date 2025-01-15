@@ -8,7 +8,11 @@ const Navbar = () => {
         <ul className="flex items-center gap-8 list-none shadow-none backdrop-blur-none">
           {["Clubs", "Projects", "Github"].map((text) => (
             <li key={text}>
-              <Link href={`#${text}`}>
+              <a
+                onClick={() => {
+                  window.open("https://github.com/TheWiseGhost/");
+                }}
+              >
                 <span className="text_button">
                   <span className="span-mother">
                     {[...text].map((char, index) => (
@@ -21,7 +25,7 @@ const Navbar = () => {
                     ))}
                   </span>
                 </span>
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

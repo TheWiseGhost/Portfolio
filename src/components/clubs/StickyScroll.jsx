@@ -27,7 +27,7 @@ export const StickyScroll = () => {
         </ul>
       ),
       content: (
-        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
+        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#e6c589]">
           <p className="uppercase font-gm text-4xl text-black text-center">
             Math Team
           </p>
@@ -58,7 +58,7 @@ export const StickyScroll = () => {
         </ul>
       ),
       content: (
-        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
+        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#e6c589]">
           <p className="uppercase font-gm text-4xl text-black text-center">
             Speech
           </p>
@@ -81,7 +81,7 @@ export const StickyScroll = () => {
         </ul>
       ),
       content: (
-        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
+        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#e6c589]">
           <p className="uppercase font-gm text-4xl text-black text-center">
             Skills USA
           </p>
@@ -104,7 +104,7 @@ export const StickyScroll = () => {
         </ul>
       ),
       content: (
-        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
+        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#e6c589]">
           <p className="uppercase font-gm text-4xl text-black text-center">
             Student Council
           </p>
@@ -127,7 +127,7 @@ export const StickyScroll = () => {
         </ul>
       ),
       content: (
-        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#D5BEF1]">
+        <div className="w-full h-80 flex justify-center items-center object-cover rounded-lg border-2 border-[#e6c589]">
           <p className="uppercase font-gm text-4xl text-black text-center">
             Math Honors Society
           </p>

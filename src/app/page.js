@@ -5,6 +5,7 @@ import Lenis from "lenis";
 import MainLanding from "@/components/landing/MainLanding";
 import MainProjects from "@/components/projects/MainProjects";
 import MainClubs from "@/components/clubs/MainClubs";
+import MaskText from "@/components/global/MaskText";
 
 export default function Home() {
   const container = useRef();
@@ -29,6 +30,7 @@ export default function Home() {
       <MainLanding />
       <MainProjects />
       <MainClubs />
+      <MaskText />
     </div>
   );
 }

@@ -747,6 +747,41 @@ path.two {
   }
 }
 
+.mask_main {
+  height: 100vh;
+}
+
+.mask_main .mask,
+.mask_main .mask_body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afa18f;
+  font-size: 64px;
+  line-height: 66px;
+  cursor: default;
+}
+
+.mask_main .mask_body p {
+  width: 100%;
+  padding: 40px;
+}
+
+.mask_main .mask_body span {
+  color: #ec4e39;
+}
+
+.mask_main .mask {
+  mask-image: url("../../public/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  background: #ec4e39;
+  position: absolute;
+  color: black;
+}
+
 @keyframes rotateGradient {
   0% {
     background: repeating-linear-gradient(
