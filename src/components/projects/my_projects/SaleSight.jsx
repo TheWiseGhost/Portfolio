@@ -70,7 +70,7 @@ const SaleSight = () => {
         <button
           className="arrow_button"
           onClick={() => {
-            window.open("https://github.com/TheWiseGhost/SaleSight");
+            window.open("https://github.com/TheWiseGhost/SaleSightFrontend");
           }}
         >
           <div className="text">

@@ -9,7 +9,7 @@ const MaskText = () => {
   const size = isHovered ? 400 : 40;
 
   return (
-    <main className="mask_main">
+    <main className="mask_main font-gm">
       <motion.div
         className="mask"
         animate={{
@@ -26,15 +26,15 @@ const MaskText = () => {
             setIsHovered(false);
           }}
         >
-          A visual designer - with skills that haven't been replaced by A.I
-          (yet) - making good shit only if the paycheck is equally good.
+          Please want to work with me. I'll do everything I can to make sure you
+          won't regret it.
         </p>
       </motion.div>
 
       <div className="mask_body">
         <p>
-          I'm a <span>selectively skilled</span> product designer with strong
-          focus on producing high quality & impactful digital experience.
+          I hope you like what your seeing! Thank you for checking out my work
+          and learning about me.
         </p>
       </div>
     </main>

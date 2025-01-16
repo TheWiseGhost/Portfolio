@@ -27,7 +27,7 @@ const MainLanding = () => {
     <div>
       <main
         ref={container}
-        className="relative h-[200vh] bg-[#ffecc7] overflow-hidden"
+        className="relative h-[200vh] bg-[#ec4e39] overflow-hidden"
       >
         <div className="z-0 sticky top-0" />
         <Section1 scrollYProgress={scrollYProgress} />

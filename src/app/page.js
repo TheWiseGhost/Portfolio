@@ -6,6 +6,8 @@ import MainLanding from "@/components/landing/MainLanding";
 import MainProjects from "@/components/projects/MainProjects";
 import MainClubs from "@/components/clubs/MainClubs";
 import MaskText from "@/components/global/MaskText";
+import MagnetRow from "@/components/global/MagnetRow";
+import Footer from "@/components/global/Footer";
 
 export default function Home() {
   const container = useRef();
@@ -31,6 +33,8 @@ export default function Home() {
       <MainProjects />
       <MainClubs />
       <MaskText />
+      <MagnetRow />
+      <Footer />
     </div>
   );
 }

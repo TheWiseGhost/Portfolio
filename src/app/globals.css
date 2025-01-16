@@ -64,8 +64,8 @@
   --animation-direction: normal; /* Default direction */
 }
 
-* {
-  scrollbar-width: thin;
+::-webkit-scrollbar {
+  width: 0px; /* Makes the scrollbar thin */
 }
 
 .animate-scroll {
@@ -134,7 +134,7 @@
   display: flex;
   position: absolute;
   overflow: hidden;
-  color: #92522b;
+  color: #ec4e39;
 }
 
 .text_button .span-mother2 span {
@@ -390,8 +390,8 @@ path.two {
     45deg,
     #ffffff,
     #ffffff 200px,
-    #ffdc9b 200px,
-    #ffdc9b 202px
+    #f4a292 200px,
+    #f4a292 202px
   );
   z-index: -1; /* Place the gradient behind the Hero component */
   animation: rotateGradient 2s linear;
@@ -440,8 +440,8 @@ path.two {
 .bars_bg {
   background-image: repeating-linear-gradient(
     to right,
-    #ffdc9b,
-    #ffdc9b 2px,
+    #ffb7b7,
+    #ffb7b7 2px,
     transparent 2px,
     transparent
   );
@@ -749,6 +749,7 @@ path.two {
 
 .mask_main {
   height: 100vh;
+  text-align: center;
 }
 
 .mask_main .mask,
@@ -782,14 +783,27 @@ path.two {
   color: black;
 }
 
+.magnet_container {
+  display: flex;
+  svg {
+    height: 50px;
+    fill: #c8bdb0;
+    transition: fill 0.2s;
+    cursor: pointer;
+    &:hover {
+      fill: #1c1c1c;
+    }
+  }
+}
+
 @keyframes rotateGradient {
   0% {
     background: repeating-linear-gradient(
       90deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   2% {
@@ -797,8 +811,8 @@ path.two {
       89deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   4% {
@@ -806,8 +820,8 @@ path.two {
       88deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   6% {
@@ -815,8 +829,8 @@ path.two {
       87deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   8% {
@@ -824,8 +838,8 @@ path.two {
       86deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   10% {
@@ -833,8 +847,8 @@ path.two {
       85deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   12% {
@@ -842,8 +856,8 @@ path.two {
       84deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   14% {
@@ -851,8 +865,8 @@ path.two {
       83deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   16% {
@@ -860,8 +874,8 @@ path.two {
       82deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   18% {
@@ -869,8 +883,8 @@ path.two {
       81deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   20% {
@@ -878,8 +892,8 @@ path.two {
       80deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   22% {
@@ -887,8 +901,8 @@ path.two {
       79deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   24% {
@@ -896,8 +910,8 @@ path.two {
       78deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   26% {
@@ -905,8 +919,8 @@ path.two {
       77deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   28% {
@@ -914,8 +928,8 @@ path.two {
       76deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   30% {
@@ -923,8 +937,8 @@ path.two {
       75deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   32% {
@@ -932,8 +946,8 @@ path.two {
       74deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   34% {
@@ -941,8 +955,8 @@ path.two {
       73deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   36% {
@@ -950,8 +964,8 @@ path.two {
       72deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   38% {
@@ -959,8 +973,8 @@ path.two {
       71deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   40% {
@@ -968,8 +982,8 @@ path.two {
       70deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   42% {
@@ -977,8 +991,8 @@ path.two {
       69deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   44% {
@@ -986,8 +1000,8 @@ path.two {
       68deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   46% {
@@ -995,8 +1009,8 @@ path.two {
       67deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   48% {
@@ -1004,8 +1018,8 @@ path.two {
       66deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   50% {
@@ -1013,8 +1027,8 @@ path.two {
       65deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   52% {
@@ -1022,8 +1036,8 @@ path.two {
       64deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   54% {
@@ -1031,8 +1045,8 @@ path.two {
       63deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   56% {
@@ -1040,8 +1054,8 @@ path.two {
       62deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   58% {
@@ -1049,8 +1063,8 @@ path.two {
       61deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   60% {
@@ -1058,8 +1072,8 @@ path.two {
       60deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   62% {
@@ -1067,8 +1081,8 @@ path.two {
       59deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   64% {
@@ -1076,8 +1090,8 @@ path.two {
       58deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   66% {
@@ -1085,8 +1099,8 @@ path.two {
       57deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   68% {
@@ -1094,8 +1108,8 @@ path.two {
       56deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   70% {
@@ -1103,8 +1117,8 @@ path.two {
       55deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   72% {
@@ -1112,8 +1126,8 @@ path.two {
       54deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   74% {
@@ -1121,8 +1135,8 @@ path.two {
       53deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   76% {
@@ -1130,8 +1144,8 @@ path.two {
       52deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   78% {
@@ -1139,8 +1153,8 @@ path.two {
       51deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   80% {
@@ -1148,8 +1162,8 @@ path.two {
       50deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   82% {
@@ -1157,8 +1171,8 @@ path.two {
       49deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   84% {
@@ -1166,8 +1180,8 @@ path.two {
       48deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   86% {
@@ -1175,8 +1189,8 @@ path.two {
       47deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   88% {
@@ -1184,8 +1198,8 @@ path.two {
       46deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
   90% {
@@ -1193,8 +1207,8 @@ path.two {
       45deg,
       #ffffff,
       #ffffff 200px,
-      #ffdc9b 200px,
-      #ffdc9b 202px
+      #ffb7b7 200px,
+      #ffb7b7 202px
     );
   }
 }

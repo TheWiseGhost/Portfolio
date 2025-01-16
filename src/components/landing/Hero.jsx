@@ -15,7 +15,7 @@ const Hero = () => {
         initial={{ filter: "blur(10px)", opacity: 0.5 }}
         animate={isInView ? { filter: "blur(0px)", opacity: 1 } : {}}
         transition={{ duration: 2.2 }}
-        className="text-[10rem] text-[#301b0b] leading-none pt-12"
+        className="text-[10rem] text-[#000000] leading-none pt-12"
       >
         ADITYA
       </motion.h2>
@@ -28,7 +28,7 @@ const Hero = () => {
         initial={{ filter: "blur(10px)", opacity: 0.5 }}
         animate={isInView ? { filter: "blur(0px)", opacity: 1 } : {}}
         transition={{ duration: 2.2 }}
-        className="text-[10rem] text-[#301b0b] leading-none"
+        className="text-[10rem] text-[#000000] leading-none"
       >
         BYJU
       </motion.h2>
