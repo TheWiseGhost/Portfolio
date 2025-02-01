@@ -10,7 +10,7 @@ const Navbar = () => {
             <li key={text}>
               <a
                 onClick={() => {
-                  window.open("https://github.com/TheWiseGhost/");
+                  alert("Scroll down to see more!");
                 }}
               >
                 <span className="text_button">
