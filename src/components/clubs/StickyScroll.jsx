@@ -39,13 +39,13 @@ export const StickyScroll = () => {
       description: (
         <ul className="list-disc space-y-2">
           <li className="font-gm text-base text-neutral-800">
+            State 3rd Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
+            State Invitational Tourney 1st Place
+          </li>
+          <li className="font-gm text-base text-neutral-800">
             Regional Invitational Tourney 1st Place
-          </li>
-          <li className="font-gm text-base text-neutral-800">
-            Regional Invitational Tourney 2nd Place
-          </li>
-          <li className="font-gm text-base text-neutral-800">
-            Regional Invitational Tourney 2nd Place
           </li>
           <li className="font-gm underline hover:text-black text-base text-neutral-800">
             <a
