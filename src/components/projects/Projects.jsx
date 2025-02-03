@@ -8,6 +8,7 @@ import DropFast from "./my_projects/DropFast";
 import MathFire from "./my_projects/MathFire";
 import SaleSight from "./my_projects/SaleSight";
 import RiceML from "./my_projects/RiceML";
+import CalculusAI from "./my_projects/CalculusAI";
 
 const Projects = () => {
   const container = useRef(null);
@@ -36,6 +37,7 @@ const Projects = () => {
     <MathFire />,
     <SaleSight />,
     <RiceML />,
+    <CalculusAI />,
   ];
 
   return (
