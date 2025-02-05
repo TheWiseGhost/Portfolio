@@ -66,7 +66,7 @@ export const StickyScroll = () => {
       ),
     },
     {
-      title: "Exec + Champion",
+      title: "President + Champion",
       description: (
         <ul className="list-disc space-y-2">
           <li className="font-gm text-base text-neutral-800">
