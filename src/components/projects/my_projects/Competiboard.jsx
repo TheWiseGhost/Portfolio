@@ -2,20 +2,20 @@ import CircleButton from "@/components/global/CircleButton";
 import StaggeredFade from "@/components/global/StaggeredFade";
 import React from "react";
 
-const NoteSlide = () => {
+const Competiboard = () => {
   return (
     <div className="w-full bg-white h-full border-4 rounded-xl border-gray-300">
       {/* Big Title */}
       <div className="flex flex-row justify-between ">
-        <img src="NoteSlideLogo.png" className="w-20 h-20 m-1" />
+        <img src="CompetiboardLogo.png" className="w-20 h-20 m-1" />
         <h1 className="text-8xl font-gs uppercase font-semibold tracking-widest text-center mb-4">
-          NoteSlide
+          Competiboard
         </h1>
         <div className="flex justify-center">
           <CircleButton
             text={"VISIT THIS PROJECT"}
-            color={"#FFDB59"}
-            url={"https://note-slide.com"}
+            color={"#FF6C63"}
+            url={"https://competiboard.com"}
           />
         </div>
       </div>
@@ -24,14 +24,14 @@ const NoteSlide = () => {
         <div className="flex flex-row items-center justify-center">
           <span className="pr-1 text-lg">Started: </span>{" "}
           <StaggeredFade
-            text="06/02/24"
+            text="01/27/25"
             className="text-black font-gm text-lg"
           />
         </div>
         <div className="flex flex-row items-center justify-center">
           <span className="pr-1 text-lg">Launched: </span>{" "}
           <StaggeredFade
-            text="08/31/24"
+            text="02/23/25"
             className="text-black font-gm text-lg"
           />
         </div>
@@ -46,16 +46,17 @@ const NoteSlide = () => {
 
       <div className="flex flex-row px-4 overflow-hidden pt-8 pr-8">
         <div className="flex flex-row space-x-4 justify-center items-center w-full">
-          <img
-            className="size-12"
-            src="https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-2945110.png?f=webp&w=256"
-          />
+          <img className="size-12" src="nextjs.svg" />{" "}
           <img className="size-12" src="django.svg" />
           <img
             className="size-12"
             src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.png"
           />
-          <img className="size-12" src="netlify.png" />
+          <img className="size-12" src="docker.avif" />
+          <img
+            className="size-12 rounded-full"
+            src="https://pageflows.imgix.net/media/logos/vercel.jpg?auto=compress&ixlib=python-1.1.2&s=739fa680c29caaeb51fc715f22da687c"
+          />
           <img className="size-12" src="mongodb.webp" />
           <img
             className="size-12"
@@ -68,7 +69,7 @@ const NoteSlide = () => {
         <button
           className="arrow_button"
           onClick={() => {
-            window.open("https://github.com/TheWiseGhost/NoteSlide");
+            window.open("https://github.com/TheWiseGhost/Competiboard");
           }}
         >
           <div className="text">
@@ -101,7 +102,7 @@ const NoteSlide = () => {
           }}
         >
           <div className="text">
-            <span>Check out NoteSlide</span>
+            <span>Check out Competiboard</span>
           </div>
           <svg
             strokeWidth="2"
@@ -124,7 +125,7 @@ const NoteSlide = () => {
         <button
           className="arrow_button"
           onClick={() => {
-            window.open("https://github.com/TheWiseGhost/NoteSlideBackend");
+            window.open("https://github.com/TheWiseGhost/CompetiboardBackend");
           }}
         >
           <div className="text">
@@ -154,14 +155,14 @@ const NoteSlide = () => {
       {/* Paragraph */}
       <div className="flex flex-row px-8 overflow-hidden pt-12 pr-12">
         <div className="flex flex-col w-full space-y-4 text-2xl font-gm text-center">
+          <p className="">Instant leaderboard from your data</p>
           <p className="">
-            Note Sharing Platform made for students by a student
+            Made for anyone with user data - SaaS, personal use, or businesses
           </p>
-          <p className="">Changing the way students make money from notes</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default NoteSlide;
+export default Competiboard;

@@ -37,7 +37,7 @@ const CalculusAI = () => {
         <div className="flex flex-row items-center justify-center">
           <span className="pr-1 text-lg">Updated: </span>{" "}
           <StaggeredFade
-            text="02/02/25"
+            text="02/10/25"
             className="text-black font-gm text-lg"
           />
         </div>

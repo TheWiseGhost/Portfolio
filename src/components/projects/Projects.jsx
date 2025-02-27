@@ -9,6 +9,7 @@ import MathFire from "./my_projects/MathFire";
 import SaleSight from "./my_projects/SaleSight";
 import RiceML from "./my_projects/RiceML";
 import CalculusAI from "./my_projects/CalculusAI";
+import Competiboard from "./my_projects/Competiboard";
 
 const Projects = () => {
   const container = useRef(null);
@@ -33,9 +34,9 @@ const Projects = () => {
 
   const projects = [
     <NoteSlide />,
+    <Competiboard />,
     <DropFast />,
     <MathFire />,
-    <SaleSight />,
     <RiceML />,
     <CalculusAI />,
   ];
