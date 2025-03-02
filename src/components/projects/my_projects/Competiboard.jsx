@@ -98,11 +98,11 @@ const Competiboard = () => {
         <button
           className="arrow_button"
           onClick={() => {
-            window.open("https://note-slide.com");
+            window.open("https://competiboard.com");
           }}
         >
           <div className="text">
-            <span>Check out Competiboard</span>
+            <span>View Competiboard</span>
           </div>
           <svg
             strokeWidth="2"
